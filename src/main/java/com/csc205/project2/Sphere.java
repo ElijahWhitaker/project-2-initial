@@ -1,6 +1,6 @@
 package com.csc205.project2;
 
-public class Sphere {
+public class Sphere extends Project2  {
 
     private double radius;
 
@@ -27,7 +27,7 @@ public class Sphere {
     }
 
     public double volume() {
-        return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
     }
 
     @Override
@@ -38,5 +38,10 @@ public class Sphere {
         sb.append(", volume=").append(volume());
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public void FourDimensionalShape() {
+
     }
 }

@@ -9,7 +9,7 @@ import java.util.List;
  * Modify the driver as needed to demonstrate your classes.
  *
  */
-public class Project2 {
+public abstract class Project2 implements FourDimensionalShape {
 
     public static void main(String[] args) {
 
@@ -33,9 +33,33 @@ public class Project2 {
         The following code works with the code given.
          */
 
-        Sphere sphere = new Sphere(2.0);
+        Sphere sphere = new Sphere(2.0) {
+            @Override
+            public void FourDimensionalShape() {
+
+            }
+        };
         System.out.println(sphere);
+
+        Cube Cube= new Cube(5.0);
+        System.out.println(Cube);
+
+        Cylinder Cylinder;
+        Cylinder = new Cylinder(4.0, 1.0) {
+            @Override
+            public void FourDimensionalShape() {
+
+            }
+        };
+        System.out.println(Cylinder);
+
+        Rectangularprism Rectangularprism;
+        Rectangularprism = new Rectangularprism(4.0, 8.0, 6.0) {
+            @Override
+            public void FourDimensionalShape() {
+
+            }
+        };
+        System.out.println(Rectangularprism);
     }
-
 }
-
